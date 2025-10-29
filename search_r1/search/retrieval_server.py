@@ -1,3 +1,14 @@
+"""
+检索服务器模块
+
+本模块提供FastAPI检索服务，支持：
+- 本地BM25检索（基于Pyserini）
+- 本地Dense检索（基于FAISS）
+- 批处理检索API
+
+服务接口: POST /retrieve
+"""
+
 import json
 import os
 import warnings
